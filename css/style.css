@@ -1,0 +1,838 @@
+/* -------- base -------- */
+
+  *{
+    box-sizing: border-box;
+  }
+
+  html{
+    font-size: 62.5%;
+  }
+
+  body{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333333;
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-weight: bold;
+    }
+
+  .contents-header{
+    font-size: 2.4rem;
+    padding-bottom: 45px;
+    line-height: 2;
+  }
+
+  .contents-text{
+    font-size: 1.6rem;
+  }
+
+  img{
+    width: 100%;
+    vertical-align: bottom;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .flex{
+    display: flex;
+  }
+
+  .jc{
+    justify-content: space-between;
+  }
+
+  .section-header{
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 54px;
+  }
+
+  .header-item{
+    transition: .4s all;
+  }
+
+
+  /* --------- base ------- */
+
+  /* --------- header ------*/
+
+  .header{
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100;
+    background-color: #FFFFFF;
+  }
+
+  .header-container{
+    max-width: 1022px;
+    height: 94px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .header-heading{
+    font-size: 2.4rem;
+  }
+
+  .header-left{
+    display: flex;
+    align-items: center;
+  }
+
+  .header-image{
+    width: 47px;
+    height: 47px;
+    margin-right: 16px;
+  }
+
+  .header-list{
+    display: flex;
+  }
+
+  .header-item{
+    font-size: 1.6rem;
+  }
+  .header-item:not(:last-child){
+    padding-right: 46px;
+  }
+
+  .header-item a{
+    color: #333333;
+  }
+
+  #contact{
+    height: 37px;
+    width: 155px;
+    background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    border-color: #FFFFFF;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  }
+
+  #contact a{
+    color:#FFFFFF;
+    line-height: 37px;
+    font-size: 1.4rem;
+  }
+
+  .globalMenuSp,.hamburger{
+    display: none;
+  }
+
+  /* ----------- /header ------- */
+
+  /* ----------- fv ------- */
+
+  .fv-container{
+    max-width: 1022px;
+    margin: 0 auto;
+    padding: 225px 30px 113px;
+    justify-content: space-between;
+  }
+
+  .fv-left{
+    flex-direction: column;
+    max-width: 350px;
+  }
+
+  .fv-header{
+    font-size: 3.1rem;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 38px;
+    z-index: 30;
+  }
+
+  .fv-text{
+    font-size: 1.6rem;
+    text-align: left;
+    padding-bottom: 38px;
+  }
+
+  .fv-image{
+    width: 518px;
+    height: 430px;
+    position: relative;
+    z-index: 50;
+  }
+
+  .image-back{
+    width: 681px;
+    height: 681px;
+    position: absolute;
+    z-index: 20;
+    top: -30px;
+    left: 713px;
+  }
+
+  .image-back img{
+    z-index: 20;
+  }
+
+/* --------- /fv ------- */
+
+/* --------- features ------*/
+  .feature-header{
+    font-size: 3.2rem;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .feature-text{
+    font-size: 1.6rem;
+    color:#3BA6C9;
+    text-align: center;
+    font-weight: bold;
+  }
+
+
+
+  /* --------- /features ------- */
+
+  /* --------- coding ------- */
+
+  .coding-container{
+    max-width: 1022px;
+    margin: 0 auto;
+    padding: 67px 0 93px;
+  }
+
+  .coding-image{
+    width: 380px;
+    height: 314px;
+  }
+
+  .coding-right{
+    text-align: left;
+    padding-top: 47px;
+  }
+
+  /* --------- /coding ------- */
+
+  /* --------- Quality ------- */
+
+  .q-container{
+    max-width: 1022px;
+    margin: 0 auto;
+    padding-bottom: 136px;
+  }
+
+  .quality-image{
+    width: 479px;
+    height: 329px;
+  }
+
+  /* --------- /Quality ------- */
+
+  /* --------- res ------- */
+
+  .res-container{
+    max-width: 1022px;
+    margin: 0 auto;
+    padding: 0 30px 156px;
+  }
+
+  .res-image{
+    width: 400px;
+    height: 290px;
+  }
+
+  /* --------- /res ------- */
+
+  /* --------- price ------- */
+
+  #price{
+    background-color: #EEFBFB;
+  }
+
+  .price-header{
+    font-size: 3.2rem;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+    padding-top: 64px;
+  }
+
+  .price-text{
+    font-size: 1.6rem;
+    color:#3BA6C9;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 70px;
+  }
+
+  .price-table{
+    width: 926px;
+    height: 410px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-color: #E5E5E5;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  }
+
+  .table-text{
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .left{
+    width: 30%;
+  }
+
+  .right{
+    width: 70%;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .price-caution{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 36px 0 68px;
+  }
+
+  /* --------- /price ------- */
+
+  /* --------- contact-view ------- */
+
+  #contact-view{
+    background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;
+  }
+
+  .cv-header{
+    font-size: 3.2rem;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+
+  .cv-text1{
+    font-size: 1.6rem;
+    color:#3BA6C9;
+    text-align: center;
+    padding-bottom: 44px;
+    color: #FFFFFF;
+  }
+
+  .cv-text2{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 44px;
+  }
+
+  .cv-contact{
+    margin: 0 auto; 
+  }
+
+  .cv-container{
+    padding: 64px 0 58px;
+  }
+  /* --------- /contact-view ------- */
+
+  /* --------- faq ------- */
+  .faq-container{
+    padding-bottom: 86px;
+  }
+  .faq-table{
+    width: 926px;
+    height: 410px;
+    margin: 0 auto;
+  }
+
+  .faq-header{
+    font-size: 3.2rem;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+    padding-top: 64px;
+  }
+
+  .faq-text{
+    font-size: 1.6rem;
+    color:#3BA6C9;
+    text-align: center;
+    padding-bottom: 70px;
+    font-weight: bold;
+  }
+
+  faq-table{
+    max-width: 907px;
+    margin: 0 auto;
+  }
+
+  .faq-answer{
+    font-size: 1.4rem;
+    align-items: center;
+    font-weight: bold;
+    background-color: #F2F2F2;
+  }
+
+  .question{
+    font-size: 1.4rem;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    height: 58px;
+  }
+
+  .a1{
+    height: 93px;
+  }
+
+  .a2{
+    height: 70px;
+  }
+
+  .a3{
+    height: 96px;
+  }
+
+  .a-text{
+    padding-left: 35px;
+  }
+
+  /* --------- /faq ------- */
+
+
+
+  /* --------- blog ------- */
+  #blog{
+    background-color: #EEFBFB;
+  }
+
+  .blog-header{
+    font-size: 3.2rem;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+    padding-top: 64px;
+  }
+
+  .blog-text{
+    font-size: 1.6rem;
+    color:#3BA6C9;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .blog-section-wrapper{
+    padding: 0 70px 91px;
+  }
+
+  .blog-list{
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+    padding-bottom: 90px;
+  }
+
+  .article-content{
+    min-height: calc(14px + 10px + 26px *3);
+    padding: 14px 32px 0 18px;
+  }
+
+  .blog-items{
+    width: 389px;
+    height: 390px;
+    margin: 0 15px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    cursor: pointer;
+    position: relative;
+  }
+
+  .blog-image{
+    height: 67%;
+  }
+  
+  .bi-text{
+    font-size: 1.8rem;
+    line-height: 26px;
+    font-weight: bold;
+    margin: 15px 20px;
+  }
+
+  time{
+    font-size: 1.6rem;
+    line-height: 26px;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    color: #444444;
+  }
+
+  /* --------- /blog ------- */
+
+  
+  
+  /* --------- works ------- */
+  
+  .work-image{
+    display: block;
+    width: 100%;
+  }
+  
+  .works-header{
+    padding: 19px 20px 30px;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .works-text{
+    text-align: left;
+    padding: 0 30px 40px 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+    /* --------- swiper ------- */
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      margin-top: 68px;
+      margin-bottom: 90px;
+    }
+      
+    .swiper-container {
+      width: 100%;
+    }
+    
+    .swiper-slide {
+      text-align: center;
+      margin: 0;
+      background: #fff;
+      flex-direction: column;
+      border: 1px solid #DDDDDD;
+      border-radius: 8px;
+      width: 322px;
+      height: 407px;
+    
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+          /* やっとできた！3日かかった。 */
+
+
+  /* --------- contact ------- */
+
+  #contact-section{
+    background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;
+  }
+
+  .contact-header{
+    font-size: 3.2rem;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color:#fff;
+    padding-top: 64px;
+
+  }
+
+  .contact-text{
+    font-size: 1.6rem;
+    color:#FFF;
+    text-align: center;
+    padding-bottom: 36px;
+    font-weight: bold;
+  }
+
+  .contact-text2{
+    font-size: 1.6rem;
+    padding-bottom: 44px;
+    color: #fff;
+    text-align: center;
+  }
+
+  
+  #contact-section{
+    padding-bottom: 70px;
+  }
+  
+  .con-container{
+    padding: 34px 62px 35px 63px;
+  }
+  
+  .contact-container{
+    max-width: 1022px;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  
+  .name,.mail,.contact-contents{
+    font-size: 1.6rem;
+    padding-right: 23px;
+  }
+  
+  .contact-icon{
+    font-size: 1.6rem;
+    padding: 4px 16px;
+    align-items: center;
+    text-align: center;
+    background-color: #0C449B;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  .contact-entry,.mail-entry{
+    width: 500px;
+    height: 43px;
+    background-color: #EEFBFB;
+    border: none;
+    margin-bottom: 25px;
+  }
+  
+  .contents-entry{
+    width: 100%;
+    height: 179px;
+    background-color: #EEFBFB;
+    border: none;
+  }
+  
+  .c-text{
+    padding-bottom: 39px;
+  }
+  
+  .check-btn{
+    padding: 30px 0 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .privacy-check{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .privacy-policy{
+    font-size: 1.6rem;
+  }
+  
+  .contact-btn{
+    margin: 0 auto;
+  }
+  /* --------- /contact ------- */
+  
+  
+  /* --------- footer ------- */
+  
+  .footer-text{
+    font-size: 1.4rem;
+    padding: 58px 0 32px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .footer-center{
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 43px 0 21px;
+  }
+
+  .footer-contents{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+  }
+
+  .footer-policy{
+    padding-left: 30px;
+  }
+
+  /* --------- footer ------- */
+
+
+
+  /* responsive */
+
+
+  @media (max-width: 1025px){
+
+  /* --------- header ------- */
+
+    .header #contact{
+      display: none;
+    }
+
+    .header-list{
+      display: none;
+    }
+
+    /*　ハンバーガーボタン　*/
+.hamburger {
+  display : block;
+  position: fixed;
+  z-index : 3;
+  right : 50px;
+  top   : 25px;
+  width : 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+.hamburger span {
+  display : block;
+  position: absolute;
+  width   : 30px;
+  height  : 2px ;
+  left    : 6px;
+  background : #555;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition   : 0.3s ease-in-out;
+  transition        : 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+  top : 16px;
+  left: 6px;
+  background :#fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform   : rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  background :#fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform   : rotate(45deg);
+  transform        : rotate(45deg);
+}
+
+nav.globalMenuSp {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  color: #fff;
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+
+nav.globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  transition: .4s all;
+  height: 80px;
+}
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+nav.globalMenuSp ul li:hover{
+  background :#ddd;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #fff;
+  padding: 1em 0;
+  font-size: 2rem;
+  align-items: center;
+  text-decoration :none;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  opacity: 100;
+  display: block;
+}
+
+    /* ------first view ------ */
+
+    .fv-container,.coding-contents,.q-contents,.res-container{
+      flex-direction: column;
+    }
+
+    .fv-left,.fv-right,.fv-left #contact,.coding-image,
+    .coding-right,.quality-left,.quality-right,.res-left,.res-right{
+      margin: 0 auto;
+    }
+
+    .fv-header,.fv-text,.fv-text,.fv-left #contact,
+    .contents-header,.contents-text{
+      text-align: center;
+    }
+
+    .fv-left #contact{
+      margin-bottom: 50px;
+    }
+
+    .contents-header,.contents-text{
+      padding-bottom: 30px;
+    }
+
+    .contents-header{
+      padding-top: 30px;
+    }
+
+    .coding-right{
+      text-align: center;
+    }
+
+    /* ------ blog ------ */
+
+    .blog-list{
+      flex-direction: column;
+    }
+
+    .blog-items{
+      width: 500px;
+      height: 500px;
+      margin: 0 auto 50px;
+    }
+
+   /* ------ contact-section ------ */
+
+   .contact-container{
+     width: 90%;  
+   }
+  }
